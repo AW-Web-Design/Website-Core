@@ -7,7 +7,7 @@
     "lint": "yarn lint:js && yarn lint:styled && yarn lint:prettier",
     "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet",
     "lint:styled": "stylelint \"packages/**/styled.ts\"",
-    "lint:prettier": "prettier --check \"**/*.{js,ts,tsx}\"",
+    "lint:prettier": "prettier --check \"**/*.{ts,tsx}\"",
     "test": "echo \"Error: no test specified\"",
     "build": "yarn build:tokens && yarn build:frontend",
     "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
