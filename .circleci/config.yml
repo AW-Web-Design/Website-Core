@@ -26,7 +26,7 @@ jobs:
   build:
     executor:
       name: node/default
-      tag: '10.4'
+      tag: '12.16.3'
     working_directory: ~/project/frontend
     steps:
       - checkout:
@@ -38,7 +38,7 @@ jobs:
   deploy:
     executor:
       name: node/default
-      tag: '10.4'
+      tag: '12.16.3'
     working_directory: ~/project/frontend
     steps:
       - checkout:
