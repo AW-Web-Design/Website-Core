@@ -93,11 +93,6 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
     ],
     alias: {
       "@/": Path.resolve(__dirname, "..", ".."),
-      "@/": Path.resolve(__dirname, "..", "..", "atoms"),
-      "@/": Path.resolve(__dirname, "..", "..", "molecules"),
-      "@/": Path.resolve(__dirname, "..", "..", "organisms"),
-      "@/": Path.resolve(__dirname, "..", "..", "pages"),
-      "@/": Path.resolve(__dirname, "..", "..", "utils"),
     }
   },
 
