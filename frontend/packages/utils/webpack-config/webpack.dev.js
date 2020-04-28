@@ -7,8 +7,6 @@ const CircularDependencyPlugin = require("circular-dependency-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const createCompiler = require("@storybook/addon-docs/mdx-compiler-plugin");
 
-const utils = require("./utils");
-
 const webpackDevConfig = (ROOT_DIR, SRC_DIR, DIST_DIR) => ({
   mode: "development",
 
