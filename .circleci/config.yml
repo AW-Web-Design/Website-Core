@@ -9,8 +9,8 @@ jobs:
       name: node/default
       tag: '10.4'
     steps:
-      - run: ls -la
       - checkout
+      - run: ls -la
       - node/with-cache:
           steps:
             - run: npm install
