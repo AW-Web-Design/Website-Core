@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import theme, { ThemeProvider } from "@//theme";
+import theme, { ThemeProvider } from "@/theme";
 
 import App from "./containers/App";
 
