@@ -7,6 +7,8 @@ const StyledBox = styled.div`
   ${compose(
     layout,
     space,
-    color
+    color,
   )}
 `;
+
+export default StyledBox;
