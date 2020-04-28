@@ -9,7 +9,7 @@ const CircularDependencyPlugin = require("circular-dependency-plugin");
 const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
   mode: "production",
 
-  context: Path.resolve(__dirname, "..", ".."),
+  context: Path.resolve(__dirname, "..", "..", ".."),
 
   module: {
     rules: [
