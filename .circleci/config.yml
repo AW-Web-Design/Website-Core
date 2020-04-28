@@ -5,10 +5,10 @@ orbs:
 
 jobs:
   build:
-    working_directory: ~/frontend
     executor:
       name: node/default
       tag: '10.4'
+      working_directory: ~/frontend
     steps:
       - checkout
       - run: ls -la
