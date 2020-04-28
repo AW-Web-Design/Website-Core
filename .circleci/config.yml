@@ -3,8 +3,27 @@ version: 2.1
 orbs:
   node: circleci/node@1.1
 
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build
+  nightly:
+    triggers:
+      - schedule:
+        cron: "0 0 * * *"
+        filters:
+          branches:
+            only:
+              - master
+    jobs:
+      - build
+      - deploy:
+        requires:
+          - build
+
 jobs:
-  build-frontend:
+  build:
     executor:
       name: node/default
       tag: '10.4'
