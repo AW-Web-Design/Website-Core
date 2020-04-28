@@ -31,9 +31,7 @@ jobs:
     steps:
       - checkout:
           path: ~/project
-      - node/with-cache:
-          steps:
-            - run: yarn
+      - run: yarn
       - run: yarn lint
       - run: yarn build
       - run: yarn test
@@ -45,9 +43,7 @@ jobs:
     steps:
       - checkout:
           path: ~/project
-      - node/with-cache:
-          steps:
-            - run: yarn
+      - run: yarn
       - run: sudo apt install rsync
       - run: yarn lint
       - run: yarn test
