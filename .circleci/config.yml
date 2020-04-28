@@ -37,3 +37,17 @@ jobs:
       - run: npm run lint
       - run: npm run build
       - run: npm run test
+  deploy:
+    executor:
+      name: node/default
+      tag: '10.4'
+    working_directory: ~/project/frontend
+    steps:
+      - checkout:
+          path: ~/project
+      - node/with-cache:
+          steps:
+            - run: npm install
+      - run: npm run lint
+      - run: npm run build
+      - run: npm run test
