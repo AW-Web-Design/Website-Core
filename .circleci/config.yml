@@ -34,8 +34,6 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn
-      - run: sudo apt-get update
-      - run: sudo apt install -y rsync
       - run: yarn lint
       - run: yarn build
       - run: yarn test
