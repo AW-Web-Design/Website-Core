@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\"",
     "build": "yarn build:tokens && yarn build:frontend",
     "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
-    "build:tokens": "@orchard/theme"
+    "build:tokens": "node @orchard/theme"
   },
   "repository": {
     "type": "git",
