@@ -29,7 +29,8 @@
     "copy-webpack-plugin": "^5.1.1",
     "@typescript-eslint/eslint-plugin": "^2.3.0",
     "@typescript-eslint/parser": "^2.3.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "@orchard/theme": "AW-Web-Design/Theme#master"
   },
   "devDependencies": {
     "@types/webpack": "^4.39.1",
