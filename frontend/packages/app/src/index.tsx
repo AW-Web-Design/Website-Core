@@ -8,7 +8,7 @@ import App from "./containers/App";
 const Root = () => (
   <ThemeProvider theme={theme}>
     <App />
-  </ThemeProivder>
+  </ThemeProvider>
 );
 
 ReactDOM.render(<Root />, document.getElementById("root"));
