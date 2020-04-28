@@ -32,7 +32,7 @@ jobs:
       - checkout:
           path: ~/project
       - run: yarn
-      - run: cd ./node_modules && ls -la
+      - run: cd ./node_modules/@orchard && ls -la
       - run: yarn lint
       - run: yarn build
       - run: yarn test
