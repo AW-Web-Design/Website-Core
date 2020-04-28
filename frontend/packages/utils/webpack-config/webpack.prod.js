@@ -94,7 +94,7 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
     plugins: [
       new AliasPlugin('described-resolve', [
         {
-          name: "@/",
+          name: "@",
           alias: [
             Path.resolve(__dirname, "..", ".."),
             Path.resolve(__dirname, "..", "..", "atoms"),
