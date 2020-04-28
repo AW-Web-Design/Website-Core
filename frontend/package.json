@@ -1,0 +1,23 @@
+{
+  "name": "orchard-web-core",
+  "version": "0.0.1",
+  "description": "A core website built for orchard",
+  "main": "generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AW-Web-Design/Website-Core.git"
+  },
+  "author": "Andy Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AW-Web-Design/Website-Core/issues"
+  },
+  "homepage": "https://github.com/AW-Web-Design/Website-Core#readme",
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
