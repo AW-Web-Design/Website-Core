@@ -9,4 +9,6 @@ interface BoxProps {
   children: ReactNode;
 }
 
-const Box = ({ children, ...rest }) => <StyledBox {...rest}>{children}</StyledBox>
+const Box = ({ children, ...rest }) => <StyledBox {...rest}>{children}</StyledBox>;
+
+export default Box;
