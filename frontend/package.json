@@ -30,6 +30,8 @@
     "@typescript-eslint/parser": "^2.3.0",
     "typescript": "^3.6.3",
     "enhanced-resolve": "5.0.0-beta.4",
+    "styled-comonents": "5.1.0",
+    "styled-system": "5.1.5",
     "@orchard/theme": "AW-Web-Design/Theme#master"
   },
   "devDependencies": {
