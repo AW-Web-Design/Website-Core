@@ -28,7 +28,7 @@
     "react-dom": "16.13.1",
     "copy-webpack-plugin": "^4.5.1",
     "@typescript-eslint/eslint-plugin": "^2.3.0",
-    "@typescript-eslint/parser": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0"
   },
   "devDependencies": {
     "@types/webpack": "^4.39.1",
@@ -60,6 +60,6 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^0.8.1",
     "stylelint-processor-styled-components": "^1.10.0",
-    "prettier": "1.16.4",
+    "prettier": "1.16.4"
   }
 }
