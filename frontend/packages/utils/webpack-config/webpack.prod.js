@@ -91,25 +91,14 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
       ".ts",
       ".tsx",
     ],
-    plugins: [
-      new AliasPlugin(
-        "described-resolve",
-        [
-          {
-            name: "@/",
-            alias: [
-              Path.resolve(__dirname, ".."),
-              Path.resolve(__dirname, "..", "atoms"),
-              Path.resolve(__dirname, "..", "molecules"),
-              Path.resolve(__dirname, "..", "organisms"),
-              Path.resolve(__dirname, "..", "pages"),
-              Path.resolve(__dirname, "..", "utils"),
-            ],
-          },
-        ],
-        "resolve",
-      ),
-    ],
+    alias: {
+      "@/": Path.resolve(__dirname, "..", ".."),
+      "@/": Path.resolve(__dirname, "..", "..", "atoms"),
+      "@/": Path.resolve(__dirname, "..", "..", "molecules"),
+      "@/": Path.resolve(__dirname, "..", "..", "organisms"),
+      "@/": Path.resolve(__dirname, "..", "..", "pages"),
+      "@/": Path.resolve(__dirname, "..", "..", "utils"),
+    }
   },
 
   plugins: [
