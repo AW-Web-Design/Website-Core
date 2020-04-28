@@ -8,12 +8,10 @@ jobs:
     executor:
       name: node/default
       tag: '10.4'
+    working_directory: ~/project/frontend
     steps:
-      - checkout
-      - run: ls -la
-      - attach_workspace:
-          # Must be absolute path or relative path from working_directory
-          at: my_workspace
+      - checkout:
+          path: ~/project
       - run: ls -la
       - node/with-cache:
           steps:
