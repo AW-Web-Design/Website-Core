@@ -29,8 +29,7 @@
         "packages/organisms/*",
         "packages/pages/*",
         "packages/utils/*"
-      ],
-      "styled-components": ["typings/styled-components"]
+      ]
     }
   },
   "include": [
@@ -38,8 +37,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
-  "files": [
-    "./typings/index.d.ts"
   ]
 }
