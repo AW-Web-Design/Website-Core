@@ -5,7 +5,6 @@ orbs:
 
 jobs:
   build:
-    working_directory: /frontend
     executor:
       name: node/default
       tag: '10.4'
