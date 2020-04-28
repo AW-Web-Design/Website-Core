@@ -33,12 +33,12 @@ jobs:
           path: ~/project
       - node/with-cache:
           steps:
-            - run: npm install
+            - run: yarn
       - run: sudo apt-get update
       - run: sudo apt install -y rsync
-      - run: npm run lint
-      - run: npm run build
-      - run: npm run test
+      - run: yarn lint
+      - run: yarn build
+      - run: yarn test
   deploy:
     executor:
       name: node/default
@@ -49,8 +49,8 @@ jobs:
           path: ~/project
       - node/with-cache:
           steps:
-            - run: npm install
+            - run: yarn
       - run: sudo apt install rsync
-      - run: npm run lint
-      - run: npm run test
-      - run: npm run build
+      - run: yarn lint
+      - run: yarn test
+      - run: yarn build
