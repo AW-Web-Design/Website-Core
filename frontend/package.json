@@ -2,7 +2,6 @@
   "name": "orchard-web-core",
   "version": "0.0.1",
   "description": "A core website built for orchard",
-  "main": "generate.js",
   "scripts": {
     "lint": "yarn lint:js && yarn lint:styled && yarn lint:prettier",
     "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet",
@@ -11,7 +10,7 @@
     "test": "echo \"Error: no test specified\"",
     "build": "yarn build:tokens && yarn build:frontend",
     "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
-    "build:tokens": "node @orchard/theme"
+    "build:tokens": "npx @orchard/theme"
   },
   "repository": {
     "type": "git",
