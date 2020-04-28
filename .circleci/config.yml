@@ -8,7 +8,6 @@ jobs:
     executor:
       name: node/default
       tag: '10.4'
-    working_directory: ~/project/frontend
     steps:
       - checkout
       - run: ls -la
