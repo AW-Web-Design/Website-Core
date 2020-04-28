@@ -6,8 +6,6 @@ const Path = require("path");
 const AliasPlugin = require("enhanced-resolve/lib/AliasPlugin");
 const CircularDependencyPlugin = require("circular-dependency-plugin");
 
-const utils = require("./utils");
-
 const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
   mode: "production",
 
@@ -43,7 +41,6 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
               modules: true,
               sourceMap: true,
               localIdentName: "[app]__[local]--[hash:base64:5]",
-              getLocalIdent: utils.getLocalIdent,
             },
           },
           {
