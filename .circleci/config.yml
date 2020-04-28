@@ -1,7 +1,7 @@
 version: 2.1
   
 orbs:
-  node: circleci/node@2.0.2
+  node: circleci/node@2.0.3
 
 workflows:
   version: 2
@@ -26,7 +26,7 @@ jobs:
   build:
     executor:
       name: node/default
-      tag: '12.16.3'
+      tag: '12.16'
     working_directory: ~/project/frontend
     steps:
       - checkout:
@@ -38,7 +38,7 @@ jobs:
   deploy:
     executor:
       name: node/default
-      tag: '12.16.3'
+      tag: '12.16'
     working_directory: ~/project/frontend
     steps:
       - checkout:
