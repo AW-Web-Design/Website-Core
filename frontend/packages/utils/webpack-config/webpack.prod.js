@@ -9,7 +9,7 @@ const CircularDependencyPlugin = require("circular-dependency-plugin");
 const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
   mode: "production",
 
-  context: Path.resolve(__dirname, "..", "..", ".."),
+  context: Path.resolve(__dirname, "..", ".."),
 
   module: {
     rules: [
@@ -98,12 +98,12 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
           {
             name: "@/",
             alias: [
-              Path.resolve(__dirname, "..", ".."),
-              Path.resolve(__dirname, "..", "..", "atoms"),
-              Path.resolve(__dirname, "..", "..", "molecules"),
-              Path.resolve(__dirname, "..", "..", "organisms"),
-              Path.resolve(__dirname, "..", "..", "pages"),
-              Path.resolve(__dirname, "..", "..", "utils"),
+              Path.resolve(__dirname, ".."),
+              Path.resolve(__dirname, "..", "atoms"),
+              Path.resolve(__dirname, "..", "molecules"),
+              Path.resolve(__dirname, "..", "organisms"),
+              Path.resolve(__dirname, "..", "pages"),
+              Path.resolve(__dirname, "..", "utils"),
             ],
           },
         ],
