@@ -12,7 +12,6 @@ jobs:
     steps:
       - checkout:
           path: ~/project
-      - run: ls -la
       - node/with-cache:
           steps:
             - run: npm install
