@@ -41,7 +41,7 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - save_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
   build:
@@ -51,10 +51,10 @@ jobs:
     working_directory: ~/project/frontend
     steps:
       - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
       - run: yarn build
       - save_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
             - packages/app
@@ -65,5 +65,5 @@ jobs:
     working_directory: ~/project/frontend
     steps:
       - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
       - run: sudo apt install rsync
