@@ -18,7 +18,7 @@ const webpackDevConfig = (ROOT_DIR, SRC_DIR, DIST_DIR) => ({
     rules: [
       {
         test: /\.(j|t)s(x)?$/,
-        exclude: /node_modules/,
+        exclude: /^\/node_modules\/((?!@orchard).)*$/,
         loader: "babel-loader",
         options: {
           cacheDirectory: true,
