@@ -33,9 +33,10 @@
     }
   },
   "include": [
-    "packages"
+    "packages",
+    "node_modules/@orchard"
   ],
   "exclude": [
-    /^\/node_modules\/((?!@orchard).)*$/
+    "node_modules"
   ]
 }
