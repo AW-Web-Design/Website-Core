@@ -39,8 +39,8 @@ jobs:
           path: ~/project
       - run: yarn
       - run: yarn lint
-      - run: yarn start
       - run: yarn test
+      - run: yarn start
   build:
     executor:
       name: node/default
