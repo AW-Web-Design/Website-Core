@@ -32,12 +32,10 @@ jobs:
       - checkout:
           path: ~/project
       - run: yarn
-      - run: cd ./node_modules/@orchard && ls -la
       - run: yarn lint
       - run: yarn build:tokens
-      - run: cd ./node_modules/@orchard/theme && ls -la
       - run: ls -la
-      - run: cd theme && ls -la && cd dist && ls -la
+      - run: cd packages && ls -la
       - run: yarn build
       - run: yarn test
   deploy:
