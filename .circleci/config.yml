@@ -41,7 +41,7 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - save_cache:
-          key: git-sha-{{ .Revision }}
+          key: dependency-cache-{{ checksum "package-lock.json" }}
   build:
     executor:
       name: node/default
@@ -49,7 +49,7 @@ jobs:
     working_directory: ~/project/frontend
     steps:
       - restore_cache:
-          key: git-sha-{{ .Revision }}
+          key: dependency-cache-{{ checksum "package-lock.json" }}
       - run: yarn build
   deploy:
     executor:
@@ -58,5 +58,5 @@ jobs:
     working_directory: ~/project/frontend
     steps:
       - restore_cache:
-          key: git-sha-{{ .Revision }}
+          key: dependency-cache-{{ checksum "package-lock.json" }}
       - run: sudo apt install rsync
