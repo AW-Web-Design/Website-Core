@@ -36,6 +36,7 @@ jobs:
       - run: yarn build:tokens
       - run: ls -la
       - run: cd packages && ls -la
+      - run: cd packages/theme && ls -la
       - run: yarn build
       - run: yarn test
   deploy:
