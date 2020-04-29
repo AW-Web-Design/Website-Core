@@ -1,6 +1,7 @@
 import React from "react";
+import { ThemeProvider as SCThemeProvider } from "styled-components";
 
-export const ThemeProvider = ({ children }) => <div>{children}</div>;
+export const ThemeProvider = ({ children }) => <SCThemeProvider>{children}</SCThemeProvider>;
 
 const theme = {};
 
