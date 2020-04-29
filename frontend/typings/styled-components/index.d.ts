@@ -10,6 +10,9 @@
 //                 Matthew Wagerfield <https://github.com/wagerfield>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.9
+import * as CSS from "csstype";
+import * as React from "react";
+import { ThemeInterface as CustomThemeInterface } from "../../packages/theme/types";
 
 // forward declarations
 declare global {
@@ -18,10 +21,6 @@ declare global {
     interface ReadableStream {}
   }
 }
-
-import * as CSS from "csstype";
-import * as React from "react";
-import { ThemeInterface as CustomThemeInterface } from "../../packages/theme/types";
 
 export type CSSProperties = CSS.Properties<string | number>;
 
