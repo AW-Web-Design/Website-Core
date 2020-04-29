@@ -51,7 +51,7 @@ jobs:
       - save_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
-            - node_modules
+            - ~/.cache/yarn
   build:
     executor:
       name: node/default
@@ -64,7 +64,7 @@ jobs:
       - save_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
-            - node_modules
+            - ~/.cache/yarn
             - packages/app
   deploy:
     executor:
