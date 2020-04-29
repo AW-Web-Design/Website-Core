@@ -2,16 +2,6 @@ version: 2.1
   
 orbs:
   node: circleci/node@2.0.3
-  
-machine:
-  environment:
-    CACHE_KEY: dependency-cache-{{ checksum "yarn.lock" }
-  pre:
-    - mkdir ~/.yarn-cache
-    
-dependencies:
-  cache_directories:
-    - ~/.yarn-cache
 
 workflows:
   version: 2
@@ -44,42 +34,35 @@ jobs:
       name: node/default
       tag: '12.16'
     working_directory: ~/project/frontend
-    environment:
-      CACHE_KEY: dependency-cache-{{ checksum "yarn.lock" }
     steps:
       - checkout:
           path: ~/project
       - run: yarn
       - run: yarn lint
       - run: yarn test
-      - save_cache:
-          key: ${CACHE_KEY}
+      - persist_to_workspace:
+          root: .
           paths:
-            - ~/.cache/yarn
+            - .
   build:
     executor:
       name: node/default
       tag: '12.16'
     working_directory: ~/project/frontend
-    environment:
-      CACHE_KEY: dependency-cache-{{ checksum "yarn.lock" }
     steps:
-      - restore_cache:
-          key: ${CACHE_KEY}
+      - attach_workspace:
+          at: .
       - run: yarn build
-      - save_cache:
-          key: ${CACHE_KEY}
+      - persist_to_workspace:
+          root: .
           paths:
-            - ~/.cache/yarn
-            - packages/app
+            - .
   deploy:
     executor:
       name: node/default
       tag: '12.16'
     working_directory: ~/project/frontend
-    environment:
-      CACHE_KEY: dependency-cache-{{ checksum "yarn.lock" }
     steps:
-      - restore_cache:
-          key: ${CACHE_KEY}
+      - attach_workspace:
+          at: .
       - run: sudo apt install rsync
