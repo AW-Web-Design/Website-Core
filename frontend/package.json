@@ -32,6 +32,7 @@
     "enhanced-resolve": "5.0.0-beta.4",
     "styled-components": "5.1.0",
     "styled-system": "5.1.5",
+    "csstype": "2.6.10",
     "@orchard/theme": "AW-Web-Design/Theme#master"
   },
   "devDependencies": {
