@@ -27,6 +27,7 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
         use: [
           {
             loader: "ts-loader",
+            options: { allowTsInNodeModules: true }
           },
         ],
       },
