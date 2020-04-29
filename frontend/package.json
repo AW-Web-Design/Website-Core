@@ -3,10 +3,9 @@
   "version": "0.0.1",
   "description": "A core website built for orchard",
   "scripts": {
-    "lint": "yarn lint:js && yarn lint:styled && yarn lint:prettier",
+    "lint": "yarn lint:js && yarn lint:styled",
     "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet",
     "lint:styled": "stylelint \"packages/**/styled.ts\"",
-    "lint:prettier": "prettier --check \"**/*.{ts,tsx}\"",
     "test": "echo \"Error: no test specified\"",
     "build": "yarn build:tokens && yarn build:frontend",
     "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
@@ -32,6 +31,7 @@
     "enhanced-resolve": "5.0.0-beta.4",
     "styled-components": "5.1.0",
     "styled-system": "5.1.5",
+    "csstype": "2.6.10",
     "@orchard/theme": "AW-Web-Design/Theme#master"
   },
   "devDependencies": {
