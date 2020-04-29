@@ -76,6 +76,7 @@ const webpackDevConfig = (ROOT_DIR, SRC_DIR, DIST_DIR) => ({
       },
     ],
   },
+  
   resolve: {
     extensions: [
       ".js",
@@ -84,30 +85,26 @@ const webpackDevConfig = (ROOT_DIR, SRC_DIR, DIST_DIR) => ({
       ".tsx",
     ],
     plugins: [
-      new AliasPlugin(
-        "described-resolve",
-        [
-          {
-            name: "@/",
-            alias: [
-              Path.resolve(__dirname, "..", ".."),
-              Path.resolve(__dirname, "..", "..", "atoms"),
-              Path.resolve(__dirname, "..", "..", "molecules"),
-              Path.resolve(__dirname, "..", "..", "organisms"),
-              Path.resolve(__dirname, "..", "..", "pages"),
-              Path.resolve(__dirname, "..", "..", "utils"),
-            ],
-          },
-        ],
-        "resolve",
-      ),
-    ],
+      new AliasPlugin('described-resolve', [
+        {
+          name: "@",
+          alias: [
+            Path.resolve(__dirname, "..", ".."),
+            Path.resolve(__dirname, "..", "..", "atoms"),
+            Path.resolve(__dirname, "..", "..", "molecules"),
+            Path.resolve(__dirname, "..", "..", "organisms"),
+            Path.resolve(__dirname, "..", "..", "pages"),
+            Path.resolve(__dirname, "..", "..", "utils"),
+          ]
+        }
+      ], "resolve")
+    ]
   },
 
   plugins: [
-    new CopyWebpackPlugin([{ from: Path.resolve(SRC_DIR, "..", "public"), to: "public" }]),
+    new CopyWebpackPlugin([{ from: Path.resolve(ROOT_DIR, "public"), to: "public" }]),
     new Webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({ template: `${SRC_DIR}/index.html`, favicon: `${SRC_DIR}/favicon.ico` }),
+    new HtmlWebpackPlugin({ template: `${SRC_DIR}/index.html`, favicon: `${SRC_DIR}/unknown[1].png` }),
     new CircularDependencyPlugin({
       exclude: /node_modules/,
       failOnError: false,
