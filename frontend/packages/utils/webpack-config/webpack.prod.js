@@ -110,7 +110,7 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
   },
 
   plugins: [
-    new CopyWebpackPlugin([{ from: Path.resolve(ROOT_DIR, "..", "public", "fonts"), to: "fonts" }]),
+    new CopyWebpackPlugin([{ from: Path.resolve(ROOT_DIR, "public", "fonts"), to: "fonts" }]),
     new HtmlWebpackPlugin({ template: `${ROOT_DIR}/index.html`, favicon: `${ROOT_DIR}/favicon.ico` }),
     new MiniCssExtractPlugin({ filename: "bundle.[contenthash].css" }),
     new CircularDependencyPlugin({
