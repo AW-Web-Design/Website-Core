@@ -23,7 +23,7 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
       },
       {
         test: /\.ts(x?)$/,
-        exclude: /node_modules/,
+        exclude: ^\/node_modules\/((?!@orchard).)*$,
         use: [
           {
             loader: "ts-loader",
