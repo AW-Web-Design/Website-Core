@@ -1,6 +1,6 @@
 const path = require("path");
 const merge = require("webpack-merge");
-const { webpackDevConfig } = require("../../../utils/webpack-config");
+const { webpackDevConfig } = require("../../utils/webpack-config");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const SRC_DIR = path.resolve(ROOT_DIR, "src");
