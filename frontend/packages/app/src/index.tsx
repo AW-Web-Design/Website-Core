@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import theme, { ThemeProvider } from "@/theme";
+import { ThemeProvider } from "@orchard/theme/theme-provider";
+import ThemeModeEnum from "@orchard/theme/enums/themeModeEnum";
+
+import theme from "@/theme";
 
 import App from "./containers/App";
 
