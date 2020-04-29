@@ -17,6 +17,7 @@ import breakpoints from "./dist/breakpoints";
 import breakpointSizes from "./dist/breakpointSizes";
 import maxWidths from "./dist/maxWidths";
 import panelSizes from "./dist/panelSizes";
+
 const theme = {
   colors,
   variants,
