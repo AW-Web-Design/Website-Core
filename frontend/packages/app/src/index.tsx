@@ -9,7 +9,7 @@ import theme from "@/theme";
 import App from "./containers/App";
 
 const Root = () => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme} mode={ThemeModeEnum.LIGHT}>
     <App />
   </ThemeProvider>
 );
