@@ -40,12 +40,16 @@ jobs:
       - run: yarn
       - run: yarn lint
       - run: yarn test
+      - save_cache:
+          key: git-sha-{{ .Revision }}
   build:
     executor:
       name: node/default
       tag: '12.16'
     working_directory: ~/project/frontend
     steps:
+      - restore_cache:
+          key: git-sha-{{ .Revision }}
       - run: yarn build
   deploy:
     executor:
@@ -53,7 +57,6 @@ jobs:
       tag: '12.16'
     working_directory: ~/project/frontend
     steps:
-      - checkout:
-          path: ~/project
-      - run: yarn
+      - restore_cache:
+          key: git-sha-{{ .Revision }}
       - run: sudo apt install rsync
