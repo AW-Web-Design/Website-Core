@@ -21,7 +21,7 @@ declare global {
 
 import * as CSS from "csstype";
 import * as React from "react";
-import { ThemeInterface as CalrecTheme } from "../../packages/theme/types";
+import { ThemeInterface as CustomThemeInterface } from "../../packages/theme/types";
 
 export type CSSProperties = CSS.Properties<string | number>;
 
@@ -340,7 +340,7 @@ export const withTheme: WithThemeFnInterface<DefaultTheme>;
 // Unfortunately, there is no way to write tests for this
 // as any augmentation will break the tests for the default case (not augmented).
 // tslint:disable-next-line:no-empty-interface
-export interface DefaultTheme extends CalrecTheme {}
+export interface DefaultTheme extends CustomThemeInterface {}
 
 export interface ThemeProviderProps<T extends object, U extends object = T> {
   children?: React.ReactNode;
