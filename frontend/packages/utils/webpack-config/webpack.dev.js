@@ -104,7 +104,7 @@ const webpackDevConfig = (ROOT_DIR, SRC_DIR, DIST_DIR) => ({
   plugins: [
     new CopyWebpackPlugin([{ from: Path.resolve(ROOT_DIR, "public"), to: "public" }]),
     new Webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({ template: `${SRC_DIR}/index.html`, favicon: `${SRC_DIR}/unknown[1].png` }),
+    new HtmlWebpackPlugin({ template: `${ROOT_DIR}/index.html`, favicon: `${SRC_DIR}/unknown[1].png` }),
     new CircularDependencyPlugin({
       exclude: /node_modules/,
       failOnError: false,
