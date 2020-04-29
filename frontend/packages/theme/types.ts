@@ -48,7 +48,6 @@ export type BreakpointsType = typeof breakpoints.breakpoints;
 export type NeutralsType = typeof neutrals.neutrals.light;
 export type ColorPrimaryType = typeof colors.primary;
 export type HighlightsType = typeof colors.highlights;
-export type BackgroundsType = typeof colors.backgrounds;
 
 export interface PanelSizes {
   width: typeof panelSizes.panelSizes.width;
@@ -74,9 +73,7 @@ export interface Colors {
   neutrals: NeutralsType;
   primary: ColorPrimaryType;
   highlights: HighlightsType;
-  backgrounds: BackgroundsType;
   highlight: string;
-  background: string;
   text: string;
 }
 
