@@ -96,8 +96,7 @@
       "^.+\\.(css|scss|svg)$": "identity-obj-proxy"
     },
     "setupFiles": [
-      "<rootDir>/setupTests.js",
-      "jest-canvas-mock"
+      "<rootDir>/setupTests.js"
     ],
     "resolver": "./jestAliasResolver"
   }
