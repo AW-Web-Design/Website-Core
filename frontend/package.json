@@ -85,7 +85,7 @@
   "jest": {
     "collectCoverageFrom": [
       "packages/**/*.js",
-      "packages/**/*.ts",
+      "packages/**/*.ts"
     ],
     "moduleFileExtensions": [
       "js",
