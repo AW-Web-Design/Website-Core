@@ -99,9 +99,6 @@
       "<rootDir>/setupTests.js",
       "jest-canvas-mock"
     ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/customMatchers"
-    ],
     "resolver": "./jestAliasResolver"
   }
 }
