@@ -6,7 +6,7 @@
     "lint": "yarn lint:js && yarn lint:styled",
     "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet",
     "lint:styled": "stylelint \"packages/**/styled.ts\"",
-    "test": "jest --silent",
+    "test": "jest --silent --passWithNoTests",
     "build": "yarn build:tokens && yarn build:frontend",
     "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
     "build:tokens": "node ./node_modules/@orchard/theme",
