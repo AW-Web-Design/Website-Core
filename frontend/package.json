@@ -80,7 +80,6 @@
     "ts-loader": "7.0.2",
     "babel-loader": "^8.0.4",
     "jest": "24.7.1",
-    "jest-canvas-mock": "^1.0.2",
     "jest-cli": "24.7.1"
   },
   "jest": {
