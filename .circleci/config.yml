@@ -65,4 +65,5 @@ jobs:
     steps:
       - attach_workspace:
           at: .
+      - run: sudo apt-get update
       - run: sudo apt install rsync
