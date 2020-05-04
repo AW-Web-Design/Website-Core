@@ -96,6 +96,12 @@ const webpackDevConfig = (ROOT_DIR, SRC_DIR, DIST_DIR) => ({
             Path.resolve(__dirname, "..", "..", "pages"),
             Path.resolve(__dirname, "..", "..", "utils"),
           ]
+        },
+        {
+          name: "@orchard",
+          alias: [
+            Path.resolve(process.cwd(), "node_modules", "@aw-web-design")
+          ]
         }
       ], "resolve")
     ]
