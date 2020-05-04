@@ -1,5 +1,4 @@
 const Webpack = require("webpack");
-const resolve = require("resolve");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -109,7 +108,7 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
         {
           name: "@orchard",
           alias: [
-            Path.resolve(__dirname, "..", "..", "..", "..", "node_modules")
+            Path.resolve(process.cwd(), "node_modules")
           ]
         }
       ], "resolve")
