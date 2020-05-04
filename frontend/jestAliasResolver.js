@@ -14,6 +14,9 @@ const dirs = [
 const extensions = ["tsx", "ts"];
 
 module.exports = function(importPath, opts) {
+  if (importPath.includes("@orchard") {
+    resolve.sync(importPath.replace("@orchard", "@aw-web-design");
+  }
   if (importPath.includes("@")) {
     for (let i = 0; i < dirs.length; i++) {
       const dir = dirs[i];
