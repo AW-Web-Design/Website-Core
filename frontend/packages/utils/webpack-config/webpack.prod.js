@@ -1,4 +1,5 @@
 const Webpack = require("webpack");
+const resolve = require("resolve");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -103,6 +104,12 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
             Path.resolve(__dirname, "..", "..", "organisms"),
             Path.resolve(__dirname, "..", "..", "pages"),
             Path.resolve(__dirname, "..", "..", "utils"),
+          ]
+        },
+        {
+          name: "@orchard",
+          alias: [
+            resolve.sync(@aw-web-design)
           ]
         }
       ], "resolve")
