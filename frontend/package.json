@@ -34,8 +34,8 @@
     "styled-components": "5.1.0",
     "styled-system": "5.1.5",
     "csstype": "2.6.10",
-    "@orchard/theme": "AW-Web-Design/Theme#master",
-    "@orchard/components": "AW-Web-Design/Components#master"
+    "@aw-web-design/theme": "0.0.1",
+    "@aw-web-design/components": "0.0.1"
   },
   "devDependencies": {
     "@types/webpack": "^4.39.1",
