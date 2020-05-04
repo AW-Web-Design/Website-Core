@@ -109,7 +109,7 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
         {
           name: "@orchard",
           alias: [
-            resolve.sync(@aw-web-design)
+            resolve.sync("@aw-web-design")
           ]
         }
       ], "resolve")
