@@ -109,7 +109,7 @@ const webpackProdConfig = (ROOT_DIR, SRC_DIR) => ({
         {
           name: "@orchard",
           alias: [
-            Path.resolve(__dirname, "..", "..", "..", "node_modules")
+            Path.resolve(__dirname, "..", "..", "..", "..", "node_modules")
           ]
         }
       ], "resolve")
