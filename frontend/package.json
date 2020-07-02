@@ -97,6 +97,9 @@
     "setupFiles": [
       "<rootDir>/setupTests.js"
     ],
+    "transformIgnorePatterns": [
+      "/^\/node_modules\/@orchard\/((theme)|(theme-provider))$/"
+    ],
     "resolver": "./jestAliasResolver"
   }
 }
