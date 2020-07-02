@@ -9,7 +9,7 @@ interface BoxProps {
   children: ReactNode;
 }
 
-const Box = ({ children, as = "div", className = "" }: BoxProps) => (
+const Box = ({ children, as, className }: BoxProps) => (
   <StyledBox as={as} className={className}>
     {children}
   </StyledBox>
