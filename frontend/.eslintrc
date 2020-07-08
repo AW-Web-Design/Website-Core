@@ -29,6 +29,7 @@
     "import/prefer-default-export": "off",
     "import/no-named-default": "off",
     "no-case-declarations": "off",
+    "react/require-default-props": "off",
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-param-reassign": 0,

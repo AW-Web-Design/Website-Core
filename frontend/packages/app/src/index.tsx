@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { ThemeProvider } from "@orchard/theme/theme-provider";
-import { ThemeModeEnum } from "@orchard/theme/enums/themeModeEnum";
+import { ThemeProvider } from "@aw-web-design/theme/theme-provider";
+import { ThemeModeEnum } from "@aw-web-design/theme/enums/themeModeEnum";
 
 import theme from "@/theme";
 
