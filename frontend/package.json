@@ -42,7 +42,7 @@
     "@types/webpack-env": "^1.14.0",
     "@babel/core": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.6.0",
     "copy-webpack-plugin": "^5.1.1",
