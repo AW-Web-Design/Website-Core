@@ -77,7 +77,7 @@
     "@storybook/addon-docs": "6.0.16",
     "css-loader": "4.2.1",
     "mini-css-extract-plugin": "0.10.0",
-    "ts-loader": "8.0.2",
+    "ts-loader": "8.0.3",
     "babel-loader": "^8.1.0",
     "jest": "26.4.1",
     "jest-cli": "26.4.2"
