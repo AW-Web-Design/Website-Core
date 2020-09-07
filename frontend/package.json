@@ -38,7 +38,7 @@
     "@aw-web-design/components": "0.0.6"
   },
   "devDependencies": {
-    "@types/webpack": "^4.41.21",
+    "@types/webpack": "^4.41.22",
     "@types/webpack-env": "^1.15.2",
     "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
