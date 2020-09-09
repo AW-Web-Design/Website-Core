@@ -75,7 +75,7 @@
     "prettier": "2.1.1",
     "circular-dependency-plugin": "5.2.0",
     "@storybook/addon-docs": "6.0.21",
-    "css-loader": "4.2.2",
+    "css-loader": "4.3.0",
     "mini-css-extract-plugin": "0.11.0",
     "ts-loader": "8.0.3",
     "babel-loader": "^8.1.0",
