@@ -80,7 +80,7 @@
     "ts-loader": "8.0.4",
     "babel-loader": "^8.1.0",
     "jest": "26.4.2",
-    "jest-cli": "26.4.2"
+    "jest-cli": "26.5.2"
   },
   "jest": {
     "collectCoverageFrom": [
