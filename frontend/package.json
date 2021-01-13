@@ -50,7 +50,7 @@
     "html-webpack-plugin": "^4.5.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
+    "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.1.4",
     "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.2.0",
