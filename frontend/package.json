@@ -34,7 +34,7 @@
     "styled-components": "5.2.0",
     "styled-system": "5.1.5",
     "csstype": "3.0.3",
-    "@aw-web-design/theme": "0.0.17",
+    "@aw-web-design/theme": "0.0.22",
     "@aw-web-design/components": "0.0.6"
   },
   "devDependencies": {
