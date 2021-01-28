@@ -19,26 +19,6 @@
     styled-system "5.1.5"
     typescript "^3.9.7"
 
-"@aw-web-design/theme@0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.20.tgz#f2a45f3ba3de81ef805f37d45c53498bce105ab2"
-  integrity sha512-O+OX2quDiVrPcaAqrZLEUCONiXyiTXZ96zv/8SQSWlHzAQ27q/q9Qyj23aBGe3JMkvwmYI4mHdxLISRPAbbAMw==
-  dependencies:
-    "@types/react" "^16.9.44"
-    "@types/styled-components" "^5.1.2"
-    "@types/styled-system" "^5.1.10"
-    "@typescript-eslint/eslint-plugin" "^2.34.0"
-    "@typescript-eslint/parser" "^2.34.0"
-    deepmerge "^4.2.2"
-    fs-extra "^9.0.1"
-    lodash "^4.17.19"
-    react "16.13.1"
-    style-dictionary "^2.10.1"
-    styled-components "^5.1.1"
-    styled-system "5.1.5"
-    tinycolor2 "^1.4.1"
-    typescript "^3.9.7"
-
 "@aw-web-design/theme@0.0.22":
   version "0.0.22"
   resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.22.tgz#875ea93eb6ed360a909a9a6dc06d0a2fce8438c7"

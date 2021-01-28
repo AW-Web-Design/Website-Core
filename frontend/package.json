@@ -9,7 +9,7 @@
     "test": "jest --silent --passWithNoTests",
     "build": "yarn build:tokens && yarn build:frontend",
     "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
-    "build:tokens": "node ./node_modules/@aw-web-design/theme/src/generate",
+    "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
     "start": "yarn build:tokens && yarn start:frontend",
     "start:frontend": "webpack-dev-server --host 0.0.0.0 --config packages/app/webpack/webpack.dev.js"
   },
@@ -34,7 +34,7 @@
     "styled-components": "5.2.0",
     "styled-system": "5.1.5",
     "csstype": "3.0.3",
-    "@aw-web-design/theme": "0.0.20",
+    "@aw-web-design/theme": "0.0.22",
     "@aw-web-design/components": "0.0.9"
   },
   "devDependencies": {
