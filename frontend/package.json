@@ -9,7 +9,7 @@
     "test": "jest --silent --passWithNoTests",
     "build": "yarn build:tokens && yarn build:frontend",
     "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
-    "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
+    "build:tokens": "node ./node_modules/@aw-web-design/theme/src/generate",
     "start": "yarn build:tokens && yarn start:frontend",
     "start:frontend": "webpack-dev-server --host 0.0.0.0 --config packages/app/webpack/webpack.dev.js"
   },

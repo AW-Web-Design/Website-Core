@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { ThemeProvider } from "@aw-web-design/theme/theme-provider";
-import { ThemeModeEnum } from "@aw-web-design/theme/enums/themeModeEnum";
+import { ThemeProvider } from "@aw-web-design/theme/src/theme-provider";
+import { ThemeModeEnum } from "@aw-web-design/theme/src/enums/themeModeEnum";
 
 import theme from "@/theme";
 
