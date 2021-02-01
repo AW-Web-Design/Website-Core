@@ -39,25 +39,25 @@
     tinycolor2 "^1.4.1"
     typescript "^3.9.7"
 
-"@aw-web-design/theme@0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.23.tgz#fadb40b8c3a9ec1f387640b8298eb0ae4ce44a64"
-  integrity sha512-BuEpSaxMz8t2BxHYlIX56JVeoQdIqICk7Ljwe2XCsRWtzMoHCImXjb70bRSY5EY3Bh/cJNVN/2z9BnBunosRxw==
+"@aw-web-design/theme@0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.24.tgz#3df712ff9aa922664060eaf311bac8fda4458fab"
+  integrity sha512-sElcUzOkhJA+XvFuhfIpsJNRG8dyQUvNs6Ec7i3D4uXPQYwwMgiI57Ebj98Iiaxa+t6OOSVXYX22tcp4v1JZCg==
   dependencies:
-    "@types/react" "^16.9.44"
-    "@types/styled-components" "^5.1.2"
+    "@types/react" "^17.0.0"
+    "@types/styled-components" "^5.1.7"
     "@types/styled-system" "^5.1.10"
     "@typescript-eslint/eslint-plugin" "^2.34.0"
     "@typescript-eslint/parser" "^2.34.0"
     deepmerge "^4.2.2"
-    fs-extra "^9.0.1"
-    lodash "^4.17.19"
-    react "16.13.1"
-    style-dictionary "^2.10.1"
-    styled-components "^5.1.1"
+    fs-extra "^9.1.0"
+    lodash "^4.17.20"
+    react "17.0.1"
+    style-dictionary "^2.10.2"
+    styled-components "^5.2.1"
     styled-system "5.1.5"
-    tinycolor2 "^1.4.1"
-    typescript "^3.9.7"
+    tinycolor2 "^1.4.2"
+    typescript "^4.1.3"
 
 "@babel/code-frame@7.8.3":
   version "7.8.3"
@@ -2167,7 +2167,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@^17.0.0":
   version "17.0.0"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.0.tgz#5af3eb7fad2807092f0046a1302b7823e27919b8"
   integrity sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
@@ -2200,7 +2200,7 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.0.tgz#7036640b4e21cc2f259ae826ce843d277dad8cff"
   integrity sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw==
 
-"@types/styled-components@^5.1.2":
+"@types/styled-components@^5.1.2", "@types/styled-components@^5.1.7":
   version "5.1.7"
   resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.7.tgz#3cd10b088c1cb1acde2e4b166b3e8275a3083710"
   integrity sha512-BJzPhFygYspyefAGFZTZ/8lCEY4Tk+Iqktvnko3xmJf9LrLqs3+grxPeU3O0zLl6yjbYBopD0/VikbHgXDbJtA==
@@ -5952,7 +5952,7 @@ fs-extra@^8.1.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^9.0.0, fs-extra@^9.0.1:
+fs-extra@^9.0.0, fs-extra@^9.0.1, fs-extra@^9.1.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
   integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
@@ -10097,6 +10097,14 @@ react@16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
+react@17.0.1:
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
+  integrity sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
 react@^16.8.3:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
@@ -11437,7 +11445,7 @@ strip-json-comments@^3.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-style-dictionary@^2.10.1:
+style-dictionary@^2.10.1, style-dictionary@^2.10.2:
   version "2.10.2"
   resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-2.10.2.tgz#9150dfcdc1492e1cd5f0f0a73e2bc6ada349c09b"
   integrity sha512-1GgtokijUl46tFXFGMmGPioO9xMzTBcCRfufYUZ61OxYRUEDT93M7Y9YxD+udgrHN2pYRrS/CiToM4jARBTccQ==
@@ -11487,7 +11495,7 @@ styled-components@5.2.0:
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
 
-styled-components@^5.1.1:
+styled-components@^5.1.1, styled-components@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.2.1.tgz#6ed7fad2dc233825f64c719ffbdedd84ad79101a"
   integrity sha512-sBdgLWrCFTKtmZm/9x7jkIabjFNVzCUeKfoQsM6R3saImkUnjx0QYdLwJHBjY9ifEcmjDamJDVfknWm1yxZPxQ==
@@ -11852,7 +11860,7 @@ tiny-emitter@^2.0.0:
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
   integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
-tinycolor2@^1.4.1:
+tinycolor2@^1.4.1, tinycolor2@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
   integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
@@ -12092,7 +12100,7 @@ typescript@^3.9.7:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
-typescript@^4.0.3:
+typescript@^4.0.3, typescript@^4.1.3:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
   integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
