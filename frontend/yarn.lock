@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aw-web-design/components@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/components/-/components-0.0.11.tgz#f7d9cade59f7b6d51049ac56a73946eb4626d22e"
-  integrity sha512-gYCcDwYbyG/cTyQlJk+5pxVPjDdeppcrIOAegXwQoL8B/32btRxTEBxyK2X3PR2LqOLKCkvsnlx2ikzhTElx0A==
+"@aw-web-design/components@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/components/-/components-0.0.12.tgz#408f0a0bf5f5d08609525d84698c0d8d08ab39d6"
+  integrity sha512-upeN0VoXvCtAOFo43n/4PE1onHXTARaokgT/sw7ePxZ/utPOdxunlFt1tLQld1tg81h4+X46tue9L4qlcCGyCg==
   dependencies:
     "@aw-web-design/theme" "0.0.22"
     "@typescript-eslint/eslint-plugin" "^2.34.0"
