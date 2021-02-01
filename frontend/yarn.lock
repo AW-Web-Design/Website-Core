@@ -39,6 +39,26 @@
     tinycolor2 "^1.4.1"
     typescript "^3.9.7"
 
+"@aw-web-design/theme@0.0.23":
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.23.tgz#fadb40b8c3a9ec1f387640b8298eb0ae4ce44a64"
+  integrity sha512-BuEpSaxMz8t2BxHYlIX56JVeoQdIqICk7Ljwe2XCsRWtzMoHCImXjb70bRSY5EY3Bh/cJNVN/2z9BnBunosRxw==
+  dependencies:
+    "@types/react" "^16.9.44"
+    "@types/styled-components" "^5.1.2"
+    "@types/styled-system" "^5.1.10"
+    "@typescript-eslint/eslint-plugin" "^2.34.0"
+    "@typescript-eslint/parser" "^2.34.0"
+    deepmerge "^4.2.2"
+    fs-extra "^9.0.1"
+    lodash "^4.17.19"
+    react "16.13.1"
+    style-dictionary "^2.10.1"
+    styled-components "^5.1.1"
+    styled-system "5.1.5"
+    tinycolor2 "^1.4.1"
+    typescript "^3.9.7"
+
 "@babel/code-frame@7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
