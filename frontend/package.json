@@ -47,7 +47,7 @@
     "@babel/preset-typescript": "^7.12.13",
     "copy-webpack-plugin": "^5.1.1",
     "fork-ts-checker-webpack-plugin": "^5.2.0",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^5.0.0",
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.0",
