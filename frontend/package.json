@@ -48,7 +48,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "fork-ts-checker-webpack-plugin": "^5.2.0",
     "html-webpack-plugin": "^5.2.0",
-    "webpack": "^5.24.1",
+    "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.4",
