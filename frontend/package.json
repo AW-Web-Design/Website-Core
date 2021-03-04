@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "predev": "yarn build:tokens",
+    "prebuild": "yarn build:tokens",
     "dev": "next dev",
     "build": "next build",
     "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
