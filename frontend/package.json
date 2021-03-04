@@ -1,28 +1,19 @@
 {
-  "name": "orchard-web-core",
+  "name": "frontend",
   "version": "0.0.1",
-  "description": "A core website built for orchard",
+  "private": true,
   "scripts": {
-    "lint": "yarn lint:js && yarn lint:styled",
-    "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet",
-    "lint:styled": "stylelint \"packages/**/styled.ts\"",
-    "test": "jest --silent --passWithNoTests",
-    "build": "yarn build:tokens && yarn build:frontend",
-    "build:frontend": "webpack --config packages/app/webpack/webpack.prod.js",
+    "predev": "yarn build:tokens",
+    "prebuild": "yarn build:tokens",
+    "dev": "next dev",
+    "build": "next build",
     "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
-    "start": "yarn build:tokens && yarn start:frontend",
-    "start:frontend": "webpack-dev-server --host 0.0.0.0 --config packages/app/webpack/webpack.dev.js"
+    "start": "next start",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:js": "npx eslint . --ext .ts,.tsx",
+    "lint:css": "stylelint ./**/styled.ts",
+    "test": "jest --passWithNoTests"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AW-Web-Design/Website-Core.git"
-  },
-  "author": "Andy Wilson",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AW-Web-Design/Website-Core/issues"
-  },
-  "homepage": "https://github.com/AW-Web-Design/Website-Core#readme",
   "dependencies": {
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -67,10 +58,8 @@
     "eslint-plugin-standard": "^4.0.1",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-sass-guidelines": "^5.4.0",
-    "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-order": "^2.2.1",
+    "stylelint-order": "^4.1.0",
     "stylelint-processor-styled-components": "^1.10.0",
     "prettier": "2.1.2",
     "circular-dependency-plugin": "5.2.0",
