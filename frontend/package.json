@@ -9,7 +9,7 @@
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "npx eslint . --ext .ts,.tsx",
     "lint:css": "stylelint ./**/styled.ts",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "next": "10.0.7",
