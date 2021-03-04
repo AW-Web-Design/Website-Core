@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "yarn build:tokens",
     "dev": "next dev",
     "build": "next build",
+    "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
     "start": "next start",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "npx eslint . --ext .ts,.tsx",
@@ -12,9 +14,13 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
+    "@aw-web-design/components": "^0.0.12",
+    "@aw-web-design/theme": "^0.0.25",
     "next": "10.0.7",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "styled-components": "^5.2.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
