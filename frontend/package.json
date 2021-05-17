@@ -18,7 +18,7 @@
     "@aw-web-design/components": "0.0.15",
     "@aw-web-design/theme": "0.0.31",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
-    "@typescript-eslint/parser": "^4.23.0",
+    "@typescript-eslint/parser": "^4.24.0",
     "copy-webpack-plugin": "^8.1.1",
     "csstype": "3.0.8",
     "enhanced-resolve": "5.8.2",
