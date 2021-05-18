@@ -15,9 +15,9 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@aw-web-design/components": "0.0.16",
+    "@aw-web-design/components": "0.0.17",
     "@aw-web-design/styled-system": "^0.0.1-alpha.1",
-    "@aw-web-design/theme": "0.0.31",
+    "@aw-web-design/theme": "0.0.32",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "copy-webpack-plugin": "^8.1.1",
