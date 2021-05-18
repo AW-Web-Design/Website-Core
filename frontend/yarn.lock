@@ -2,22 +2,22 @@
 # yarn lockfile v1
 
 
-"@aw-web-design/components@0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/components/-/components-0.0.15.tgz#e1c6e0e3201e574730fb24a1a127da0c0224aa0d"
-  integrity sha512-s8eykDrYEFgDoxze9GlmxzZgI7TgpD1r/RxzxpVcDTxa7znS4UsSjWpHLlr86gAlhPOYq7uijdcE10FQEaWqCw==
+"@aw-web-design/components@0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/components/-/components-0.0.16.tgz#8569738f0ac88f395f8487260eaeab854b95520c"
+  integrity sha512-UD40jXVrqWw3jTBwug4xOV/EFMMiAZgNmmJqMUUtovINpsPd9ESJCqWulEsF8iwpVfEBuRs9WiFEYYBH9/rI+w==
   dependencies:
     "@aw-web-design/theme" "0.0.30"
     "@typescript-eslint/eslint-plugin" "^2.34.0"
-    "@typescript-eslint/parser" "^4.16.1"
-    copy-webpack-plugin "^6.1.1"
+    "@typescript-eslint/parser" "^4.17.0"
+    copy-webpack-plugin "^8.0.0"
     csstype "3.0.7"
     enhanced-resolve "5.2.0"
     react "16.13.1"
     react-dom "16.13.1"
     styled-components "5.2.0"
     styled-system "5.1.5"
-    typescript "^4.2.2"
+    typescript "^4.2.3"
 
 "@aw-web-design/theme@0.0.30":
   version "0.0.30"
@@ -2768,7 +2768,7 @@
     "@typescript-eslint/typescript-estree" "2.34.0"
     eslint-visitor-keys "^1.1.0"
 
-"@typescript-eslint/parser@^4.16.1", "@typescript-eslint/parser@^4.24.0":
+"@typescript-eslint/parser@^4.17.0", "@typescript-eslint/parser@^4.24.0":
   version "4.24.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.24.0.tgz#2e5f1cc78ffefe43bfac7e5659309a92b09a51bd"
   integrity sha512-dj1ZIh/4QKeECLb2f/QjRwMmDArcwc2WorWPRlB8UNTZlY1KpTVsbX7e3ZZdphfRw29aTFUSNuGB8w9X5sS97w==
@@ -4739,24 +4739,7 @@ copy-to-clipboard@^3.3.1:
   dependencies:
     toggle-selection "^1.0.6"
 
-copy-webpack-plugin@^6.1.1:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-6.4.1.tgz#138cd9b436dbca0a6d071720d5414848992ec47e"
-  integrity sha512-MXyPCjdPVx5iiWyl40Va3JGh27bKzOTNY3NjUTrosD2q7dR/cLD0013uqJ3BpFbUjyONINjb6qI7nDIJujrMbA==
-  dependencies:
-    cacache "^15.0.5"
-    fast-glob "^3.2.4"
-    find-cache-dir "^3.3.1"
-    glob-parent "^5.1.1"
-    globby "^11.0.1"
-    loader-utils "^2.0.0"
-    normalize-path "^3.0.0"
-    p-limit "^3.0.2"
-    schema-utils "^3.0.0"
-    serialize-javascript "^5.0.1"
-    webpack-sources "^1.4.3"
-
-copy-webpack-plugin@^8.1.1:
+copy-webpack-plugin@^8.0.0, copy-webpack-plugin@^8.1.1:
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-8.1.1.tgz#3f697e162764925c2f0d235f380676125508fd26"
   integrity sha512-rYM2uzRxrLRpcyPqGceRBDpxxUV8vcDqIKxAUKfcnFpcrPxT5+XvhTxv7XLjo5AvEJFPdAE3zCogG2JVahqgSQ==
@@ -6306,7 +6289,7 @@ fast-glob@^2.2.6:
     merge2 "^1.2.3"
     micromatch "^3.1.10"
 
-fast-glob@^3.1.1, fast-glob@^3.2.4, fast-glob@^3.2.5:
+fast-glob@^3.1.1, fast-glob@^3.2.5:
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.5.tgz#7939af2a656de79a4f1901903ee8adcaa7cb9661"
   integrity sha512-2DtFcgT68wiTTiwZ2hNdJfcHNke9XOfnwmBRWXhmeKM8rF0TGwmC/Qto3S7RoZKp5cilZbxzO5iTNTQsJ+EeDg==
@@ -12965,7 +12948,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.2.2, typescript@^4.2.3, typescript@^4.2.4:
+typescript@^4.2.3, typescript@^4.2.4:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
   integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
