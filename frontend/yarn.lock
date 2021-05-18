@@ -43,10 +43,10 @@
     tinycolor2 "^1.4.2"
     typescript "^4.2.3"
 
-"@aw-web-design/theme@0.0.31":
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.31.tgz#c83f21fc79c69b04bd5090b445626a7c757c1f91"
-  integrity sha512-eG8EVzvjGlONUtg7zPcTxAKfFuFJLzD/ZpxK36/e2uvBSurECJ0dNHgziBVGYZLdBiI/C6BVsf/CZ4SbZjtBeg==
+"@aw-web-design/theme@0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.32.tgz#0166c31716a1b0c1b2ea9929ae1975f97c10ba90"
+  integrity sha512-yNLU7XV1noqevVQQBywS7ozWy9nxUSZ0h/phRLH2FyPtGXXx3/7IOIVwLhEXIq3KaYt+0zN+bj85Ag38VFsFZg==
   dependencies:
     "@types/react" "^17.0.5"
     "@types/styled-components" "^5.1.9"
