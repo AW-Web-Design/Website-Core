@@ -2,11 +2,12 @@
 # yarn lockfile v1
 
 
-"@aw-web-design/components@0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/components/-/components-0.0.17.tgz#e92fc27a0ae3e5d304b778e2a15256a173598234"
-  integrity sha512-koKxFE3l6L/rYLbvFNaP5DRHMizTKHYXqIS7ZLxVXyeRs4uYPugjdDNRi0YB3LiD5xH1cYrIOW7WBmKBFbGPqQ==
+"@aw-web-design/components@0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/components/-/components-0.0.18.tgz#9ac6bdea31699c144cf2b5cea2d915543f6f2b11"
+  integrity sha512-uPOoP9joTJRxIbrALGDYJAMCE2zifVqR92VKfd1ZLxe6EBUSqkYKnit7inSO8s1yZqbD8aHAJN6Srgtmc8OKtA==
   dependencies:
+    "@aw-web-design/styled-system" "^0.0.1-alpha.1"
     "@aw-web-design/theme" "0.0.30"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@typescript-eslint/eslint-plugin" "^2.34.0"
@@ -19,7 +20,6 @@
     react-feather "^2.0.9"
     react-lazy-named "^1.2.2"
     styled-components "5.3.0"
-    styled-system "5.1.5"
     svg-react-loader "^0.4.6"
     typescript "^4.2.4"
 
