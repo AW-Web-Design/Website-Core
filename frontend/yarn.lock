@@ -32,6 +32,15 @@
     "@emotion/memoize" "^0.7.5"
     csstype "^3.0.8"
 
+"@aw-web-design/styled-system@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/styled-system/-/styled-system-0.0.2.tgz#e94ba25303e4be3530fa6c01cc5045baced81096"
+  integrity sha512-B15T3Be1pwHce3zfQBdYNg5wae5r+0L3q9f8JOPv6I4JH8D9tvuUfxUYARCfkP7H7eqMj+OpfYhh0pivykuZTA==
+  dependencies:
+    "@emotion/is-prop-valid" "^1.1.0"
+    "@emotion/memoize" "^0.7.5"
+    csstype "^3.0.8"
+
 "@aw-web-design/theme@0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.30.tgz#ba7bd0ab620cdb0d473ff0549e18cf1c50fc5e26"
