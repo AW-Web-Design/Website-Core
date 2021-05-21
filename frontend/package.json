@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@aw-web-design/components": "0.0.18",
-    "@aw-web-design/styled-system": "^0.0.2",
+    "@aw-web-design/styled-system": "^0.1.0",
     "@aw-web-design/theme": "0.0.33",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
