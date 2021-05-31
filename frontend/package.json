@@ -19,7 +19,7 @@
     "@aw-web-design/styled-system": "^0.1.0",
     "@aw-web-design/theme": "0.0.33",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
+    "@typescript-eslint/parser": "^4.26.0",
     "copy-webpack-plugin": "^9.0.0",
     "csstype": "3.0.8",
     "enhanced-resolve": "5.8.2",
