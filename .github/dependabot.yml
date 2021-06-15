@@ -13,25 +13,5 @@ updates:
   open-pull-requests-limit: 99
   target-branch: dev
   versioning-strategy: increase
-  ignore:
-  - dependency-name: fork-ts-checker-webpack-plugin
-    versions:
-    - 6.2.2
-    - 6.2.3
-  - dependency-name: css-loader
-    versions:
-    - 5.2.3
-  - dependency-name: ts-loader
-    versions:
-    - 9.0.0
-  - dependency-name: webpack
-    versions:
-    - 5.34.0
-  - dependency-name: react-dom
-    versions:
-    - 17.0.2
-  - dependency-name: next
-    versions:
-    - 10.1.0
   registries:
   - npm-registry-npm-pkg-github-com-aw-web-design
